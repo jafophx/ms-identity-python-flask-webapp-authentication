@@ -17,10 +17,10 @@ LINUX/OSX - in a terminal window, type the following:
 
 WINDOWS - in a command window, type the following:
 ====================================================
-    set FLASK_APP=authenticate_users_in_my_tenant.py
-    set FLASK_ENV=development
-    set FLASK_DEBUG=1
-    set FLASK_RUN_CERT=adhoc
+    $env:FLASK_APP="app.py"
+    $env:FLASK_ENV="development"
+    $env:FLASK_DEBUG="1"
+    $env:FLASK_RUN_CERT="adhoc"
     flask run
 
 You can also use "python -m flask run" instead of "flask run"
